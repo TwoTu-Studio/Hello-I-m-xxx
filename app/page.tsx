@@ -1,63 +1,65 @@
 const projects = [
   {
     index: "01",
-    name: "实时协同文档平台",
-    role: "核心开发 · 前端负责人",
-    period: "2024",
+    name: "智能健康管理与居家安全监测系统",
+    role: "后端开发 · IoT 模块负责人",
+    period: "2025.10 — 至今",
     description:
-      "主导编辑器内核选型与协同方案设计，基于 CRDT 实现多人实时编辑，重构渲染管线解决长文档卡顿问题。",
-    highlight: "首屏加载时间降低 62%",
-    tags: ["React", "TypeScript", "CRDT", "WebSocket"],
+      "参与健康服务聚合与 IoT 安全监测建设：接入多家健康服务供应商并屏蔽接口差异，完善远程问诊呼叫链路日志与转呼兜底逻辑，搭建健康数据底座，并负责智能手环、跌倒检测等设备接入与紧急呼救联动。",
+    highlight: "远程问诊呼叫成功率 75% → 98%",
+    tags: ["Go", "MySQL", "Elasticsearch", "WebSocket", "IoT", "大模型"],
     gradient: "from-emerald-400/20 via-teal-500/10 to-transparent",
   },
   {
     index: "02",
-    name: "内部 AI 代码评审助手",
-    role: "独立开发",
-    period: "2023",
+    name: "轻量化运营交易履约系统",
+    role: "后端开发 · 核心交易链路",
+    period: "2025.12 — 至今",
     description:
-      "设计 diff 分片与上下文压缩策略，让模型在有限 token 内理解变更意图；通过规则引擎过滤低质量建议。",
-    highlight: "评审平均耗时减少 40%",
-    tags: ["Next.js", "LLM", "Node.js", "Prompt 工程"],
+      "负责小度端完整购物链路与多商户支付结算改造，参与 trade-service 统一交易模块设计，将 Web、小度、子女、居民四端重复的交易逻辑收敛到统一服务，并通过 Hook 扩展机制适配多类目与新旧运营模式。",
+    highlight: "四端交易逻辑收敛为统一服务",
+    tags: ["Go", "MySQL", "Redis", "微信支付收付通", "AI Agent"],
     gradient: "from-violet-400/20 via-fuchsia-500/10 to-transparent",
   },
   {
     index: "03",
-    name: "电商订单中台重构",
+    name: "老人端娱乐内容与互动服务建设",
     role: "后端开发",
-    period: "2022 — 2023",
+    period: "2025.08 — 2025.12",
     description:
-      "负责订单状态机抽象与消息队列解耦，推动核心链路灰度迁移，建立全链路监控与告警体系。",
-    highlight: "大促零故障，接口 P99 降低 55%",
-    tags: ["Go", "Kafka", "MySQL", "微服务"],
+      "参与内容互动与实时激励系统建设：基于大模型与 MCP 实现内容自动化供给，负责社交广场与积分任务模块升级，并通过 WebSocket 将直播奖励从离线结算改造为实时激励模式。",
+    highlight: "终端活跃率提升约 20%",
+    tags: ["Go", "Redis", "WebSocket", "大模型 / MCP"],
     gradient: "from-sky-400/20 via-blue-500/10 to-transparent",
   },
 ];
 
 const experiences = [
   {
-    company: "某互联网公司",
-    title: "高级前端工程师",
-    period: "2023 — 至今",
-    achievement: "主导协同文档前端架构，支撑 20+ 团队日常协作",
+    company: "百度",
+    title: "后端开发工程师",
+    period: "2025.07 — 至今",
+    achievement:
+      "负责养老业务核心系统后端研发，覆盖智能运营、交易履约、健康管理与 AI Agent 应用建设",
   },
   {
-    company: "某电商公司",
-    title: "后端工程师",
-    period: "2021 — 2023",
-    achievement: "参与订单中台重构，核心接口 P99 耗时降低 55%",
+    company: "字节跳动",
+    title: "测试开发工程师（实习）",
+    period: "2024.06 — 2024.10",
+    achievement:
+      "参与抖音电商内容治理平台质量保障，基于接口日志与队列数据建设自动化测试能力",
   },
 ];
 
 const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
   "Go",
-  "Tailwind CSS",
-  "Three.js",
-  "性能优化",
+  "Gin / Go-zero",
+  "MySQL",
+  "Redis",
+  "Elasticsearch",
+  "Kafka",
+  "AI Agent / MCP",
+  "WebSocket",
 ];
 
 export default function Home() {
@@ -89,16 +91,20 @@ export default function Home() {
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-acid" />
             Hello! I&apos;m · 开放机会中
           </p>
-          <h1 className="text-[20vw] leading-[0.85] font-black tracking-tighter sm:text-[16vw] lg:text-[11rem]">
-            XIAO
+          <h1 className="text-[18vw] leading-[0.85] font-black tracking-tighter sm:text-[14vw] lg:text-[10rem]">
+            XUHAO
             <br />
-            <span className="text-outline">HAO</span>
+            <span className="text-outline">ZHOU</span>
           </h1>
-          <p className="mt-10 max-w-md text-base leading-relaxed text-zinc-400">
-            小豪 · 全栈工程师
+          <p className="mt-10 max-w-md text-sm leading-relaxed text-zinc-400">
+            周旭豪 · 后端开发工程师 / AI 开发工程师
             <br />
-            专注 Web 应用与 AI 工具，把复杂问题拆解成清晰的方案。
+            全栈开发工程师（学习中…）
           </p>
+          <p className="mt-8 text-2xl font-medium tracking-tight text-zinc-200">
+            Imagine. Navigate. Forge. Persist.
+          </p>
+          <p className="mt-3 text-xs tracking-[0.4em] text-zinc-500">— INFP</p>
         </div>
         <div className="absolute bottom-8 z-10 text-[10px] tracking-[0.4em] text-zinc-500 uppercase">
           Scroll to explore ↓
@@ -189,7 +195,7 @@ export default function Home() {
           {experiences.map((exp) => (
             <div
               key={exp.company}
-              className="grid gap-4 border-t border-zinc-900 py-10 sm:grid-cols-[140px_1fr_1fr] sm:items-baseline"
+              className="grid gap-4 border-t border-zinc-900 py-10 sm:grid-cols-[160px_1fr_1fr] sm:items-baseline"
             >
               <span className="text-sm text-zinc-500">{exp.period}</span>
               <div>
@@ -211,23 +217,23 @@ export default function Home() {
         <p className="text-xs tracking-[0.3em] text-zinc-500 uppercase">
           What&apos;s next
         </p>
-        <a href="mailto:hi@example.com" className="group mt-8 block">
+        <a href="mailto:zhou_xuhao_huda@163.com" className="group mt-8 block">
           <span className="text-[14vw] leading-none font-black tracking-tighter transition group-hover:text-acid sm:text-[10rem]">
             LET&apos;S
             <br />
             TALK
           </span>
         </a>
-        <div className="mt-12 flex justify-center gap-8 text-sm text-zinc-400">
-          <a href="mailto:hi@example.com" className="transition hover:text-acid">
-            hi@example.com
-          </a>
-          <a href="https://github.com" className="transition hover:text-acid">
-            GitHub
+        <div className="mt-12 text-sm text-zinc-400">
+          <a
+            href="mailto:zhou_xuhao_huda@163.com"
+            className="transition hover:text-acid"
+          >
+            zhou_xuhao_huda@163.com
           </a>
         </div>
         <footer className="mt-24 text-xs text-zinc-600">
-          © 2026 小豪 · 由 Hello! I&apos;m xxx 模板驱动
+          © 2026 周旭豪 · 由 Hello! I&apos;m xxx 模板驱动
         </footer>
       </section>
     </main>
