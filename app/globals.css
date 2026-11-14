@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@theme {
+  --color-acid: #ccff00;
+  --color-ink: #0a0a0a;
+}
+
+body {
+  background: #0a0a0a;
+  color: #f4f4f5;
+}
+
+::selection {
+  background: #ccff00;
+  color: #0a0a0a;
+}
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(244, 244, 245, 0.3);
+}
+
+/* Hero 静态背景：荧光绿光晕 + 点阵纹理 */
+.hero-backdrop {
+  background-image:
+    radial-gradient(ellipse at center, rgba(204, 255, 0, 0.1), transparent 65%),
+    radial-gradient(rgba(244, 244, 245, 0.14) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    28px 28px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}

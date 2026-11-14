@@ -23,3 +23,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 本地预览截图与临时脚本
+/previews/

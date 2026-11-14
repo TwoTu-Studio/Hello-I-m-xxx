@@ -12,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN">
-      <body className="antialiased">{children}</body>
+    <html lang="zh-CN" className="scroll-smooth">
+      <body className="bg-ink antialiased">{children}</body>
     </html>
   );
 }
